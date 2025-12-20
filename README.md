@@ -194,25 +194,6 @@ Tools > Serial Monitor
 Baud Rate: 115200
 ```
 
-## Project Structure
-
-```
-nova-x-esp32c5/
-├── nova-x-esp32c5.ino
-├── globals.h
-├── globals.cpp
-├── display.h
-├── display.cpp
-├── wifiP.h
-├── wifiP.cpp
-├── bt. h
-├── bt.cpp
-├── button.h
-├── button.cpp
-├── devices.h
-├── deivces.cpp
-└── bitmap.h
-```
 
 ## Usage
 

@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/warwick320/Nova-X-5G-Deauther"><img src="https://github.com/warwick320/Nova-X-5G-Deauther/blob/main/img/novax.png" alt="Nova-X" width="200"></a>
+  <a href="https://github.com/warwick320/Nova-X-5G-Deauther"><img src="https://github.com/warwick320/Nova-X-5G-Deauther/blob/main/img/logo.png" alt="Nova-X" width="200"></a>
   <br>
   Nova-X • ᚾᚬᚢᛅ ᛋ
   <br>

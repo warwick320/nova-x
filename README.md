@@ -1,5 +1,10 @@
-# Nova-X ᚾᚬᚢᛅ ᛋ
-
+<h1 align="center">
+  <br>
+  <a href="https://github.com/warwick320/Nova-X-5G-Deauther"><img src="https://github.com/warwick320/Nova-X-5G-Deauther/blob/main/img/novax.png" alt="Nova-X" width="200"></a>
+  <br>
+  Nova-X • ᚾᚬᚢᛅ ᛋ
+  <br>
+</h1>
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=c%2B%2B&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-2C2D72?logo=espressif&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)

@@ -175,6 +175,8 @@ https://espressif.github.io/arduino-esp32/package_esp32_index.json
 
 ### Step 2: Upload Sketch
 
+> Before upload sketch you need to patch your esp32 compiler - [patcher](https://github.com/7h30th3r0n3/Evil-M5Project/tree/main/utilities/deauth_prerequisites) - ex) [my platform.txt](https://github.com/warwick320/Nova-X-5G-Deauther/blob/main/platform.txt)
+
 1. Open `nova-x-esp32c5/nova-x-esp32c5.ino`
 2. Configure board settings:
    - Board: ESP32C5 Dev Module

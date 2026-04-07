@@ -187,15 +187,15 @@ void spam_task_fn(void*) {
         adv_params.disc_mode = is_apple ? BLE_GAP_DISC_MODE_GEN : BLE_GAP_DISC_MODE_NON;
 
         if (is_apple) {
-            adv_params.itvl_min = 0x30;
-            adv_params.itvl_max = 0x40;
+            adv_params.itvl_min = 0x20;
+            adv_params.itvl_max = 0x20;
         } else {
             adv_params.itvl_min = 0x20;
             adv_params.itvl_max = 0x28;
         }
 
         uint8_t own_addr = is_apple ? BLE_OWN_ADDR_PUBLIC : BLE_OWN_ADDR_RANDOM;
-        int32_t adv_ms = is_apple ? 200 : static_cast<int32_t>((esp_random() % 50) + 50);
+        int32_t adv_ms = is_apple ? 50 : static_cast<int32_t>((esp_random() % 50) + 50);
 
         rc = ble_gap_adv_start(own_addr, nullptr, adv_ms, &adv_params, nullptr, nullptr);
         if (rc != 0) {
@@ -210,7 +210,7 @@ void spam_task_fn(void*) {
 
         if (ble_gap_adv_active()) ble_gap_adv_stop();
 
-        uint32_t idle = is_apple ? 15 : 20;
+        uint32_t idle = is_apple ? 5 : 10;
         vTaskDelay(pdMS_TO_TICKS(idle));
     }
 

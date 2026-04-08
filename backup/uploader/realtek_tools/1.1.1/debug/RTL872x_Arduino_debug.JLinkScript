@@ -1,0 +1,22 @@
+void ConfigTargetSettings(void) {
+  JLINK_CORESIGHT_AddAP(0, CORESIGHT_APB_AP);
+  JLINK_CORESIGHT_AddAP(1, CORESIGHT_AHB_AP);
+  JLINK_CORESIGHT_AddAP(2, CORESIGHT_AHB_AP);
+  JLINK_CPU                       = CORTEX_M33;
+  JLINK_CORESIGHT_IndexAHBAPToUse = 2;
+  
+  JLINK_ExecCommand("map ram 0x10000000-0x1007FFFF");
+  JLINK_ExecCommand("map add 0x08000000-0x0FFFFFFF N FLASH");
+  JLINK_ExecCommand("DisableFlashBPs");
+  JLINK_ExecCommand("DisableFlashDL");
+  
+  JTAG_WriteClocks(1);
+  JTAG_Speed = 1000;
+}
+
+void AfterResetTarget(void) {
+  unsigned int TMP;
+  TMP = MEM_ReadU32(0x480003F8);
+  TMP = TMP | (1<<25);
+  MEM_WriteU32(0x480003F8, TMP);
+}
